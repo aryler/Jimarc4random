@@ -1,0 +1,22 @@
+what:	Jimarc4random 0.3
+where:	https://github.com/aryler/Jimarc4random/
+where:	http://www3.bell.net/stwo/software/
+who:	Stuart Cassoff <stwo@users.sourceforge.net>
+why:	Jim interface to arc4random(3)
+when:	Fall 2014
+how:	$ ./itzev ?options? && make
+how:	$ make test
+how:	$ make install
+need:	Jim, arc4random(3), POSIX
+
+Jimarc4random should build easily on any POSIX system
+that has arc4random(3).
+
+The configuration program is called 'itzev'.
+$ ./itzev -help
+
+Use configuration option -bje and Makefile target bje
+to build using build-jim-ext.
+
+By default, Jimarc4random will be configured to build
+for Jim on OpenBSD.

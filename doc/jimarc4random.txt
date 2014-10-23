@@ -1,0 +1,23 @@
+NAME
+	Jimarc4random - Jim interface to arc4random(3)
+
+SYNOPSIS
+	package require arc4random
+
+	arc4random random
+	arc4random bytes <nbytes>
+	arc4random uniform <upperbound>
+
+DESCRIPTION
+	The Jimarc4random extension provides a Jim interface to arc4random(3).
+
+COMMANDS
+	arc4random random
+		Returns a 32-bit unsigned random number.
+
+	arc4random bytes <nbytes>
+		Returns a string nbytes bytes long of random data.
+
+	arc4random uniform <upperbound>
+		Returns a 32-bit unsigned random number
+		uniformly distributed but less than upperbound.
